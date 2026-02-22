@@ -1,0 +1,27 @@
+{
+  "description": "Template to help link this website to mobile apps. Replace placeholders before publishing.",
+
+  "android": [
+    {
+      "relation": [
+        "delegate_permission/common.handle_all_urls"
+      ],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.srujan.applinking",
+        "sha256_cert_fingerprints": [
+          "A4:F0:0C:D2:F9:BD:41:11:FC:E1:CB:A4:F5:C1:DE:23:37:33:92:37:B7:02:DB:88:FD:38:B7:B7:02:DB:88:FD:38:B3:11:F5:CE:F5:0C"
+        ]
+      }
+    }
+  ],
+
+  "ios": [
+    {
+      "appID": "TEAMID.com.example.myapp",
+      "paths": ["*"]
+    }
+  ],
+
+  "notes": "For Android: publish a JSON like the 'android' entry at '/.well-known/assetlinks.json' (exact filename and location required). For iOS: create an 'apple-app-site-association' file at the site root or '/.well-known/' (no file extension) and serve with Content-Type 'application/json'. Replace package names, team IDs, and SHA256 fingerprints with your app's real values before deploying."
+}
